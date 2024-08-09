@@ -1,0 +1,7 @@
+output/
+__pycache__/
+.idea/
+datasets/
+*.log
+*.xml
+*.xlsx

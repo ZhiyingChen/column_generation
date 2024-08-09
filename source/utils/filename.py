@@ -1,0 +1,7 @@
+DEMAND_FILE = 'demand.csv'
+PARAMETER_FILE = '全局参数.csv'
+OUT_SOLUTION_FILE = 'solutionOut.csv'
+OUT_KPI_FILE = 'kpiOut.csv'
+OUT_SUPPLY_FILE = 'supplyOut.csv'
+OUT_DEMAND_FILE = 'demandOut.csv'
+OUT_FULFILLMENT_FILE = 'fulfillmentOut.csv'
