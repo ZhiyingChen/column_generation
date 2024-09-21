@@ -100,10 +100,8 @@ class Context:
         self.input_data.read_data()
 
         self.result_storage = ResultStorage(input_data=self.input_data)
-        if self.input_data.whether_process_remain:
-            self.execute_sequentially()
-        else:
-            self.execute_in_parallel()
+
+        self.execute_sequentially()
 
         self.result_storage.dump()
 

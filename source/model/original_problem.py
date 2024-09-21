@@ -57,7 +57,7 @@ class OriginalProblem(MasterProblem):
         self.create_whether_pattern_used_var()
 
         def whether_pattern_used_rule(model, j):
-            return model.x[j] <= len(self.demand_dict) * model.whether_pattern_used_var[j]
+            return model.x[j] <= 10*len(self.demand_dict) * model.whether_pattern_used_var[j]
 
         self.model.whether_pattern_used_constr = pe.Constraint(self.model.set_j, rule=whether_pattern_used_rule)
         logging.info("created whether_pattern_used_constr: {}".format(len(self.model.whether_pattern_used_constr)))
