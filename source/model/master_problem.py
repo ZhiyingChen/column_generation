@@ -13,7 +13,7 @@ class MasterProblem:
         # create model
         self.model = pe.ConcreteModel('Master')
         self.model.dual = pe.Suffix(direction=pe.Suffix.IMPORT)
-        self.opt = pe.SolverFactory("gurobi", solver_io="python")
+        self.opt = pe.SolverFactory("glpk")
         # self.opt.options['OutputFlag'] = 1
 
     def build_model(self):

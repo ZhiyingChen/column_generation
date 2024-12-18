@@ -21,7 +21,7 @@ class SubProblem:
 
         # create model
         self.model = pe.ConcreteModel('Sub')
-        self.opt = pe.SolverFactory("gurobi", solver_io="python")
+        self.opt = pe.SolverFactory("glpk")
         # self.opt.options['OutputFlag'] = 1
 
         # create parameters

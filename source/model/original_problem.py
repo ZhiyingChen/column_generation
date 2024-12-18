@@ -72,7 +72,7 @@ class OriginalProblem(MasterProblem):
         super().create_obj()
 
     def solve_model(self):
-        self.opt.solve(self.model, tee=True, options={'MIPGap': 0.001, 'TimeLimit': 30})
+        self.opt.solve(self.model, tee=True, options={'mipgap': 0.001, 'tmlim': 30})
         obj = pe.value(self.model.obj)
         x_dict = {j: pe.value(self.model.x[j]) for j in self.model.set_j}
 
